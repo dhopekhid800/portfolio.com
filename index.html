@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Samuel G | Developer Samuel G</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0a0f1f;
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(10,15,31,.85);
+backdrop-filter:blur(10px);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:700;
+color:#00d4ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid #00d4ff;
+margin-bottom:20px;
+object-fit:cover;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero span{
+color:#00d4ff;
+}
+
+.typing{
+font-size:1.4rem;
+margin:20px 0;
+color:#cbd5e1;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#00d4ff;
+color:#00111a;
+font-weight:600;
+border-radius:30px;
+text-decoration:none;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#00d4ff;
+}
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:18px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project h3{
+margin-bottom:10px;
+color:#00d4ff;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#00d4ff;
+text-decoration:none;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:#050814;
+color:#94a3b8;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Portfolio</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="https://via.placeholder.com/180" alt="Profile">
+
+<h1>Hello, I'm <span>Samuel Gyamfi</span></h1>
+
+<div class="typing"></div>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
+
+<section id="about" class="fade">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+<p>
+I am an aspiring web developer passionate about creating modern,
+responsive and user-friendly websites. I enjoy learning new
+technologies and turning ideas into real digital experiences.
+</p>
+</div>
+
+</section>
+
+<section id="skills" class="fade">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">UI/UX Basics</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="fade">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>A modern personal portfolio built with HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="project">
+<h3>Landing Page</h3>
+<p>Responsive business landing page with modern design.</p>
+</div>
+
+<div class="project">
+<h3>Future Project</h3>
+<p>Your next amazing project goes here.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+<p>Email: dhopekhid800@gmail.com</p>
+<p>GitHub: <a href="#"><github class="com">
+<samuel></samuel></a></p>
+<p>LinkedIn: <a href="#"><linkedin class="com">
+<in>
+<samu></samu></a></p>
+</div>
+
+</section>
+
+<footer>
+© 2026 KILL BILL | All Rights Reserved
+</footer>
+
+<script>
+
+const text = [
+"Frontend Developer",
+"Website Designer",
+"Creative Problem Solver"
+];
+
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+(function type(){
+
+if(count === text.length){
+count = 0;
+}
+
+currentText = text[count];
+letter = currentText.slice(0, ++index);
+
+document.querySelector('.typing').textContent = letter;
+
+if(letter.length === currentText.length){
+
+count++;
+index = 0;
+
+setTimeout(type,1500);
+
+}else{
+
+setTimeout(type,100);
+
+}
+
+})();
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+
+});
+
+});
+
+document.querySelectorAll('.fade').forEach(el => {
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
